@@ -1,19 +1,11 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --font-montserrat: 'Montserrat', sans-serif;
   --font-abril: 'Abril Fatface', serif;
   --font-inter: 'Inter', sans-serif;
-}
-
-@theme inline {
-  --font-sans: var(--font-montserrat);
-  --font-inter: var(--font-inter);
-  --color-primary-navy: #0D3B66;
-  --color-primary-cream: #FAF0CA;
-  --color-primary-gold: #F4D35E;
-  --color-navy-light: #1a5a99;
-  --color-gold-dark: #d4b03e;
 }
 
 .font-inter {
