@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "dev": "next dev",
-        "build": "npx opennextjs-cloudflare build",
+        "build": "next build",
         "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
         "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
         "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
@@ -31,5 +31,8 @@
         "postcss": "^8.4.49",
         "typescript": "^5",
         "wrangler": "^4.46.0"
+    },
+    "optionalDependencies": {
+        "@ast-grep/napi-linux-x64-gnu": "^0.21.0"
     }
 }
