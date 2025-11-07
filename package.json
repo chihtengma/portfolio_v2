@@ -5,6 +5,7 @@
     "scripts": {
         "dev": "next dev",
         "build": "next build --webpack",
+        "postinstall": "npm rebuild lightningcss || true",
         "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
         "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
         "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
@@ -31,5 +32,8 @@
         "eslint-config-next": "16.0.1",
         "typescript": "^5",
         "wrangler": "^4.46.0"
+    },
+    "optionalDependencies": {
+        "@lightningcss/linux-x64-gnu": "^1.28.2"
     }
 }
